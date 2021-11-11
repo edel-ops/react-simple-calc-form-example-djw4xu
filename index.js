@@ -10,9 +10,9 @@ function FormularioSuma() {
     setNum(x.target.value);
   }
 
-  function manejadorSubmit(y) {
+  function manejadorSubmit(e) {
     setSum(sum + Number(num));
-    y.preventDefault();
+    e.preventDefault();
   }
 
   return <form onSubmit={manejadorSubmit}>
